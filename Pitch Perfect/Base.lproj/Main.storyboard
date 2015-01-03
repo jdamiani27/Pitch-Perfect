@@ -9,7 +9,7 @@
         <!--Record-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="RecordSoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -40,7 +40,6 @@
                                 </state>
                                 <connections>
                                     <action selector="stopRecording:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4vw-V1-aLl"/>
-                                    <segue destination="owz-ED-Q6a" kind="show" id="TQV-mx-Gpn"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -89,6 +88,7 @@
                         <outlet property="recordButton" destination="51I-mx-9bz" id="dja-8B-BGO"/>
                         <outlet property="recordingInProgress" destination="Akr-TG-MZf" id="cIN-6Q-gmS"/>
                         <outlet property="stopButton" destination="1Wk-qs-und" id="Riu-tv-DXb"/>
+                        <segue destination="owz-ED-Q6a" kind="show" identifier="stopRecording" id="z22-sk-0xg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -151,12 +151,12 @@
                                 <exclude reference="I5U-qI-UUR"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="GCm-Uy-WIo"/>
                                 <exclude reference="9aK-VC-bhP"/>
                                 <exclude reference="jcm-R4-qBW"/>
                                 <exclude reference="c8o-Z2-DtM"/>
                                 <exclude reference="gmh-Ad-QvR"/>
                                 <exclude reference="1Pi-3n-gIO"/>
-                                <exclude reference="GCm-Uy-WIo"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -166,12 +166,12 @@
                                 <include reference="I5U-qI-UUR"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="GCm-Uy-WIo"/>
                                 <include reference="9aK-VC-bhP"/>
                                 <include reference="jcm-R4-qBW"/>
                                 <include reference="c8o-Z2-DtM"/>
                                 <include reference="gmh-Ad-QvR"/>
                                 <include reference="1Pi-3n-gIO"/>
-                                <include reference="GCm-Uy-WIo"/>
                             </mask>
                         </variation>
                     </view>
