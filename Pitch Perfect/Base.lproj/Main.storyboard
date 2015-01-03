@@ -134,29 +134,58 @@
                                     <action selector="stopPlayback:" destination="owz-ED-Q6a" eventType="touchUpInside" id="bEj-ku-zks"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WpS-dp-F1r">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="chipmunk">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playChipmunkAudio:" destination="owz-ED-Q6a" eventType="touchUpInside" id="MRD-XZ-U0d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUT-Ki-0fV">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="darthvader">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playChipmunkAudio:" destination="owz-ED-Q6a" eventType="touchUpInside" id="Rkb-wZ-ZSu"/>
+                                    <action selector="playDarthvaderAudio:" destination="owz-ED-Q6a" eventType="touchUpInside" id="DQF-Oa-TIW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="I5U-qI-UUR" secondAttribute="centerX" id="1Pi-3n-gIO"/>
                             <constraint firstItem="9a2-JB-1Dy" firstAttribute="leading" secondItem="cZ3-pz-JOx" secondAttribute="leadingMargin" constant="30" id="9aK-VC-bhP"/>
                             <constraint firstItem="UKA-sB-5Qu" firstAttribute="top" secondItem="I5U-qI-UUR" secondAttribute="bottom" constant="20" id="GCm-Uy-WIo"/>
+                            <constraint firstItem="WpS-dp-F1r" firstAttribute="top" secondItem="9a2-JB-1Dy" secondAttribute="bottom" constant="54" id="On7-Lw-cqG"/>
+                            <constraint firstItem="WUT-Ki-0fV" firstAttribute="centerX" secondItem="GDG-W9-VUc" secondAttribute="centerX" id="X0p-Hf-9Gt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="GDG-W9-VUc" secondAttribute="trailing" constant="30" id="c8o-Z2-DtM"/>
                             <constraint firstItem="GDG-W9-VUc" firstAttribute="centerY" secondItem="9a2-JB-1Dy" secondAttribute="centerY" id="gmh-Ad-QvR"/>
+                            <constraint firstItem="WUT-Ki-0fV" firstAttribute="top" secondItem="GDG-W9-VUc" secondAttribute="bottom" constant="54" id="iMA-Ez-c3V"/>
                             <constraint firstItem="9a2-JB-1Dy" firstAttribute="top" secondItem="8sq-uE-bOa" secondAttribute="bottom" constant="50" id="jcm-R4-qBW"/>
+                            <constraint firstItem="WpS-dp-F1r" firstAttribute="centerX" secondItem="9a2-JB-1Dy" secondAttribute="centerX" id="ohc-o5-Exn"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="9a2-JB-1Dy"/>
                                 <exclude reference="GDG-W9-VUc"/>
                                 <exclude reference="I5U-qI-UUR"/>
+                                <exclude reference="WpS-dp-F1r"/>
+                                <exclude reference="WUT-Ki-0fV"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="GCm-Uy-WIo"/>
                                 <exclude reference="9aK-VC-bhP"/>
                                 <exclude reference="jcm-R4-qBW"/>
+                                <exclude reference="On7-Lw-cqG"/>
+                                <exclude reference="ohc-o5-Exn"/>
                                 <exclude reference="c8o-Z2-DtM"/>
                                 <exclude reference="gmh-Ad-QvR"/>
+                                <exclude reference="X0p-Hf-9Gt"/>
+                                <exclude reference="iMA-Ez-c3V"/>
                                 <exclude reference="1Pi-3n-gIO"/>
+                                <exclude reference="GCm-Uy-WIo"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -164,14 +193,20 @@
                                 <include reference="9a2-JB-1Dy"/>
                                 <include reference="GDG-W9-VUc"/>
                                 <include reference="I5U-qI-UUR"/>
+                                <include reference="WpS-dp-F1r"/>
+                                <include reference="WUT-Ki-0fV"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="GCm-Uy-WIo"/>
                                 <include reference="9aK-VC-bhP"/>
                                 <include reference="jcm-R4-qBW"/>
+                                <include reference="On7-Lw-cqG"/>
+                                <include reference="ohc-o5-Exn"/>
                                 <include reference="c8o-Z2-DtM"/>
                                 <include reference="gmh-Ad-QvR"/>
+                                <include reference="X0p-Hf-9Gt"/>
+                                <include reference="iMA-Ez-c3V"/>
                                 <include reference="1Pi-3n-gIO"/>
+                                <include reference="GCm-Uy-WIo"/>
                             </mask>
                         </variation>
                     </view>
@@ -200,6 +235,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chipmunk" width="100" height="100"/>
+        <image name="darthvader" width="100" height="100"/>
         <image name="fast" width="100" height="100"/>
         <image name="microphone" width="100" height="100"/>
         <image name="slow" width="100" height="100"/>
